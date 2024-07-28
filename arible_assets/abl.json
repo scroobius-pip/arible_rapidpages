@@ -1,0 +1,21 @@
+{
+    "title": "Rapidpages",
+    "description": "Use rapidpages.com to generate user interfaces from simple text descriptions in seconds.",
+    "endpoint": "https://rapidpages.simdi.workers.dev",
+    "fields": [
+        {
+            "name": "prompt",
+            "title": "UI Description",
+            "description": "A chat application panel with a header, a search input, and a list of recent conversations.",
+            "type": "Text",
+            "validation": {
+                "allOf": [
+                    {
+                        "min": 10,
+                        "message": "Write a description of the UI"
+                    }
+                ]
+            }
+        }
+    ]
+}
